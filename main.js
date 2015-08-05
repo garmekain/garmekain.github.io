@@ -40,7 +40,7 @@ function positionCanvas() {
 function drawCircle(x, y) {
 	ctx.beginPath();
 	ctx.arc(x, y, 3, 0, 2*Math.PI);
-	ctx.fillStyle="red";
+	ctx.fillStyle = "black";
 	ctx.fill();
 }
 
