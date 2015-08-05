@@ -113,8 +113,8 @@ document.getElementById('toStart').addEventListener('mousedown', function(){docu
 
 function sendMail() {
     var link = "mailto:study.randomness@gmail.com?"
-             + "&subject=" + escape("RANDOMNESS")
-             + "&body=" + escape("{" + pts + "}")
+             + "&subject=" + "RANDOMNESS"
+             + "&body=" + "{" + pts + "}"
     ;
 
     window.location.href = link;
