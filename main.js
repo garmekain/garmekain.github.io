@@ -62,7 +62,7 @@ function redrawPoints() {
 addPoint = function(e) {
 	if(drawn < 10) {
 		var mousePos = getMousePos(canvas, e);
-		pts.push([mousePos.x, mousePos.y]);
+		pts.push([mousePos.x / w, mousePos.y / h]);
 		refreshCanvas();
 		drawn++;
 	}
@@ -76,7 +76,7 @@ addPoint = function(e) {
 function refreshCanvas() {
 	canvas.width = canvas.width;
 	for(i = 0; i<pts.length; i++) {
-		drawCircle(pts[i][0], pts[i][1]);
+		drawCircle(pts[i][0] * w, pts[i][1] * h);
 	}
 }
 
