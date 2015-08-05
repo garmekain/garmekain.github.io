@@ -103,7 +103,7 @@ document.getElementById('toStart').addEventListener('mousedown', function(){docu
 function sendMail() {
     var link = "mailto:garmekain@gmail.com"
              + "?"
-             + "&subject=" + escape("RANDOMNESS STUDY")
+             + "&subject=" + escape("RANDOMNESS")
              + "&body=" + escape("{" + pts + "}")
     ;
 
