@@ -82,6 +82,12 @@ function refreshCanvas() {
 
 
 
+
+
+
+
+
+
 window.onload = function() {
 	resizeCanvas();
 	positionCanvas();
@@ -89,7 +95,12 @@ window.onload = function() {
 window.onresize = function() {
 	resizeCanvas();
 	positionCanvas();
+	refreshCanvas();
 }
+
+
+
+
 
 
 canvas.addEventListener('mousedown', addPoint, false);
@@ -101,8 +112,7 @@ document.getElementById('toStart').addEventListener('mousedown', function(){docu
 
 
 function sendMail() {
-    var link = "mailto:garmekain@gmail.com"
-             + "?"
+    var link = "mailto:study.randomness@gmail.com?"
              + "&subject=" + escape("RANDOMNESS")
              + "&body=" + escape("{" + pts + "}")
     ;
