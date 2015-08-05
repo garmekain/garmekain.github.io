@@ -62,7 +62,7 @@ function redrawPoints() {
 addPoint = function(e) {
 	if(drawn < 10) {
 		var mousePos = getMousePos(canvas, e);
-		pts.push([mousePos.x / width, mousePos.y / height]);
+		pts.push([(mousePos.x / width).toFixed(3), (mousePos.y / height).toFixed(3)]);
 		refreshCanvas();
 		drawn++;
 	}
