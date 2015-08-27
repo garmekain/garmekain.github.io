@@ -29,9 +29,11 @@ html {
 	}
 }
 h1 {
+	text-transform: uppercase;
 	text-align: center;
 	width: 100%;
 	padding: 10% 0 10% 0;
+	color: rgba(0,0,0,.5);
 }
 hr {
 	height: 1px;
@@ -48,13 +50,15 @@ ul li {
 }
 ul li a {
 	margin: 0 auto;
-	color: rgba(0,0,0,.5);
 	display: block;
 	width: 66%;
-	transition: 250ms ease-in-out;
-	text-decoration: none;
 }
-ul li a:hover {
+a {
+	color: rgba(0,0,0,.5);
+	text-decoration: none;
+	transition: 250ms ease-in-out;
+}
+a:hover {
 	color: rgba(0,120,255,1);
 }
 ul li a > div {
