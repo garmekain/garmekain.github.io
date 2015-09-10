@@ -41,27 +41,28 @@ hr {
 	height: 1px;
 	border: none;
 	background-color: rgba(0,0,0,.2);
-	margin-bottom: 80px;
 }
-ul {
+#content {
+	padding: 50px 15%;
+}
+#content ul {
 	list-style: none;
 	width: 100%;
 }
-ul li {
+#content ul li {
 	display: block;
-	margin-bottom: 50px;
+	margin: 50px auto;
 }
-ul li a {
+#content ul li a {
 	margin: 0 auto;
 	display: block;
-	width: 66%;
 }
-a {
+#content a {
 	color: rgba(0,0,0,.5);
 	text-decoration: none;
 	transition: 250ms ease-in-out;
 }
-a:hover {
+#content a:hover {
 	color: rgba(0,120,255,.8);
 }
 ul li a > div {
